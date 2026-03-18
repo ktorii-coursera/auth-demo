@@ -23,7 +23,7 @@ export default function LoginPage() {
     setLoading(false);
 
     if (res.ok) {
-      router.push("/authenticated");
+      router.push("/showcase");
     } else {
       setError("Incorrect password.");
     }
