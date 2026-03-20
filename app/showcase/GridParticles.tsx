@@ -34,31 +34,17 @@ export default function GridParticles() {
 
     const spawn = () => {
       if (particles.length >= MAX_PARTICLES) return;
-      const horizontal = Math.random() > 0.5;
       const maxLife = 400 + Math.random() * 300;
-      if (horizontal) {
-        const row = Math.round(Math.random() * (canvas.height / GRID)) * GRID;
-        particles.push({
-          x: -20,
-          y: row,
-          vx: 0.2 + Math.random() * 0.35,
-          vy: 0,
-          life: 0,
-          maxLife,
-          horizontal: true,
-        });
-      } else {
-        const col = Math.round(Math.random() * (canvas.width / GRID)) * GRID;
-        particles.push({
-          x: col,
-          y: -20,
-          vx: 0,
-          vy: 0.2 + Math.random() * 0.35,
-          life: 0,
-          maxLife,
-          horizontal: false,
-        });
-      }
+      const col = Math.round(Math.random() * (canvas.width / GRID)) * GRID;
+      particles.push({
+        x: col,
+        y: -20,
+        vx: 0,
+        vy: 0.2 + Math.random() * 0.35,
+        life: 0,
+        maxLife,
+        horizontal: false,
+      });
     };
 
     let animId: number;
