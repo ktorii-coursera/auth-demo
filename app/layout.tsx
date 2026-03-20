@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Barlow_Condensed, Inter } from "next/font/google";
+import { Barlow_Condensed, Source_Sans_3 } from "next/font/google";
+import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const sourceSans = Source_Sans_3({ subsets: ["latin"], variable: "--font-source-sans" });
 const barlowCondensed = Barlow_Condensed({
   subsets: ["latin"],
   weight: ["700", "900"],
@@ -20,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${barlowCondensed.variable}`}>
+      <body className={`${sourceSans.variable} ${barlowCondensed.variable}`}>
         {children}
       </body>
     </html>
