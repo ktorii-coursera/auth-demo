@@ -382,13 +382,6 @@ export default function ShowcasePage() {
               <MediaLightbox
                 media={entry.media}
                 projectTitle={entry.title}
-                creator={entry.creator}
-                slackMessage={entry.slackMessage}
-                preview={entry.preview}
-                github={entry.github}
-                awardName={entry.award.name}
-                awardDesc={entry.award.desc}
-                awardImage={entry.award.image}
                 gradientClass={styles[entry.gradient]}
               />
 
