@@ -81,7 +81,7 @@ export default function GridParticles() {
         }
 
         const progress = p.life / p.maxLife;
-        const fade = progress < 0.3 ? progress / 0.3 : progress > 0.7 ? (1 - progress) / 0.3 : 1;
+        const fade = progress < 0.6 ? progress / 0.6 : progress > 0.7 ? (1 - progress) / 0.3 : 1;
         const alpha = fade * 0.04;
 
         // Glowing trail
