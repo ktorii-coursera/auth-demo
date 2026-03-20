@@ -12,13 +12,6 @@ export type MediaItem = {
 type Props = {
   media: MediaItem[];
   projectTitle: string;
-  creator: string;
-  slackMessage: string;
-  preview: string | null;
-  github: string | null;
-  awardName: string;
-  awardDesc: string;
-  awardImage: string;
   gradientClass: string;
 };
 
