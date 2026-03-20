@@ -4,6 +4,7 @@ import styles from "./showcase.module.css";
 import MediaLightbox from "./MediaLightbox";
 import type { MediaItem } from "./MediaLightbox";
 import AwardZoom from "./AwardZoom";
+import GridParticles from "./GridParticles";
 
 export const metadata: Metadata = {
   title: "Agent-Only Happy Hackathon Day — Showcase",
@@ -303,7 +304,13 @@ Built with Claude Code in a day.`,
 export default function ShowcasePage() {
   return (
     <main className={styles.main}>
-      {/* Decorative orbs */}
+      {/* Grid energy particles */}
+      <GridParticles />
+
+      {/* Animated background waves */}
+      <div className={styles.wave1} />
+      <div className={styles.wave2} />
+      <div className={styles.wave3} />
       <div className={`${styles.orb} ${styles.orb1}`} />
       <div className={`${styles.orb} ${styles.orb2}`} />
 
