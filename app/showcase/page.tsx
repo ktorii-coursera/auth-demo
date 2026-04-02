@@ -287,6 +287,7 @@ Built with Claude Code in a day.`,
     github: "https://github.com/dmalipeddi-coursera/learning-wrapped",
     gradient: "g11",
     media: [
+      { type: "drive-video", src: "1v_ubAiu-HuiLk-Jf4pMl7axqtWYWQ747" },
       { type: "image", src: "/showcase/diwakar1.png" },
       { type: "image", src: "/showcase/diwakar2.png" },
       { type: "image", src: "/showcase/diwakar3.png" },
